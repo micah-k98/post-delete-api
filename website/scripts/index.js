@@ -41,3 +41,7 @@ function displayEach(course) {
     const startDateCell = row.insertCell(5);
     startDateCell.innerText = course.startDate;
 }
+
+function addButtonClicked() {
+    location.href = "/website/new-courses.html"
+}

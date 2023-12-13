@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/services/courses-service.js"></script>
+</head>
+<body>
+
+    <main class="container mt-5 mb-5">
+        <form>
+            <div class="form-group mt-3">
+                <label for="dept" class="form-label">Department:</label>
+                <input type="text" id="dept" class="form-control" placeholder="Enter Department Name">
+            </div>
+            <div class="form-group mt-3">
+                <label for="courseNum" class="form-label">Course Number:</label>
+                <input type="text" id="courseNum" class="form-control" placeholder="Enter Course Number">
+            </div>
+            <div class="form-group mt-3">
+                <label for="courseName" class="form-label">Course Name:</label>
+                <input type="text" id="courseName" class="form-control" placeholder="Enter Course Name">
+            </div>
+            <div class="form-group mt-3">
+                <label for="instructor" class="form-label">Instructor Name:</label>
+                <input type="text" id="instructor" class="form-control" placeholder="Enter Instructor Name">
+            </div>
+            <div class="form-group mt-3">
+                <label for="startDate" class="form-label">Start Date:</label>
+                <input type="text" id="startDate" class="form-control" placeholder="Enter Start Date">
+            </div>
+            <div class="form-group mt-3">
+                <label for="numDays" class="form-label">Number of Days:</label>
+                <input type="text" id="numDays" class="form-control" placeholder="Enter Number of Days">
+            </div>
+
+            <button class="btn btn-success mt-3 p-2 col-2" id="saveButton">Save</button>
+        </form>
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
