@@ -142,14 +142,5 @@
     "instructor": "Brittany",
     "startDate": "Aug 1",
     "numDays": 5
-  },
-  {
-    "id": 18,
-    "dept": "CompSci",
-    "courseNum": "112",
-    "courseName": "JavaScript",
-    "instructor": "Daniel",
-    "startDate": "Dec 10",
-    "numDays": 12
   }
 ]

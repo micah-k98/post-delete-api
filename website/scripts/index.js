@@ -40,8 +40,25 @@ function displayEach(course) {
     instructorCell.innerText = course.instructor;
     const startDateCell = row.insertCell(5);
     startDateCell.innerText = course.startDate;
+
+    const buttonCell = row.insertCell(6);
+    const deleteButton = document.createElement("button");
+    deleteButton.classList.add("btn");
+    deleteButton.classList.add("btn-danger");
+    deleteButton.innerText = "Delete";
+    buttonCell.appendChild(deleteButton);
+
+    deleteButton.addEventListener("click", ()=> {
+        const isConfirmed = confirm(`This action will permanently delete ${course.courseName}. Would you like to proceed?`);
+        if (isConfirmed) {
+            coursesService.delete(course.id).then(()=> {
+                coursesRows.removeChild(row);
+            })
+        }
+    })
 }
 
 function addButtonClicked() {
     location.href = "/website/new-courses.html"
 }
+
